@@ -1,0 +1,23 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "book library backend",
+  "keywords": [
+    "book"
+  ],
+  "homepage": "https://github.com/VortexWanderer9/BookLibrary#readme",
+  "bugs": {
+    "url": "https://github.com/VortexWanderer9/BookLibrary/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VortexWanderer9/BookLibrary.git"
+  },
+  "license": "MIT",
+  "author": "Tyrell wellick",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  }
+}
