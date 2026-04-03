@@ -1,4 +1,5 @@
 import './App.css'
+import Navbar from './Components/Navbar'
 
 
 
@@ -20,9 +21,9 @@ const App = () => {
       backgroundSize: "40px 40px, 40px 40px, 100% 100%",
     }}
   />
-     {/* Your Content/Components */}
+   <Navbar/>
 </div>
-  </>
+     </>
   )
 }
 export default App
