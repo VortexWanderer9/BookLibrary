@@ -1,4 +1,5 @@
 import './App.css'
+import Category from './Components/Category'
 import Navbar from './Components/Navbar'
 
 
@@ -7,7 +8,7 @@ import Navbar from './Components/Navbar'
 const App = () => {
   return (
   <>
-<div className="min-h-screen w-full bg-[#020617] relative">
+<div className="min-h-screen w-full bg-[#020617] relative"> 
   {/* Magenta Orb Grid Background */}
   <div
     className="absolute inset-0 z-0"
@@ -55,6 +56,7 @@ const App = () => {
    </div>
   </div>
 </div>
+    <Category />
      </>
   )
 }
