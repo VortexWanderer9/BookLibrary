@@ -56,7 +56,9 @@ const App = () => {
    </div>
   </div>
 </div>
-    <Category />
+<div>
+   <Category />
+</div>
      </>
   )
 }
