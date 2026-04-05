@@ -1,6 +1,6 @@
 import React from 'react'
 import { useState } from 'react'
-import MovieCard from './MovieCard';
+import BookCard from './BookCard';
 
 
 function Category() {
@@ -27,7 +27,7 @@ const [selectedCategory, setSelectedCategory] = useState('Fantasy');
       </div>
     </div>
   </div>
-  <MovieCard category={selectedCategory} />
+  <BookCard category={selectedCategory} />
 </div>
   )
 }
