@@ -1,26 +1,29 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { useEffect } from 'react';
 import Loading from './Loading';
 
-function BookCard({category}) {
+function BookCard({category, limit}) {
     const [books, setBooks] = React.useState([]);
+    const [loading, setLoading] = useState(true);
       useEffect(() =>{
         const FetchBooks = async () =>{
           try {
-            const response = await fetch(`https://openlibrary.org/subjects/${category.toLowerCase()}.json?limit=100`)
+            setLoading(true);
+            const response = await fetch(`https://openlibrary.org/subjects/${category.toLowerCase()}.json?limit=${limit}`)
            const data = await response.json();
            setBooks(data.works);
            console.log(data.works);
+           setLoading(false);
            
           } catch (err) {
             console.error("Error fetching books:", err);
           }
         }
         FetchBooks();
-      }, [category]);
+      }, [category, limit]);
   return (
   <>
-   {books.length === 0 ? (
+   {loading ? (
     <Loading type="grid" />
   ) : (
      <div>
