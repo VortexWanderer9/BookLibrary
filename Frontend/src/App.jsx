@@ -23,7 +23,10 @@ const App = () => {
       backgroundSize: "40px 40px, 40px 40px, 100% 100%",
     }}
   />
-  <Outlet />
+  <Navbar/>
+ <div className='absolute w-full h-full p-3'>
+   <Outlet />
+ </div>
 </div>
      </>
   )

@@ -5,8 +5,7 @@ import Footer from '../Components/Footer'
 
 function Home() {
   return (
-    <div className='absolute w-full'>
-     <Navbar/>
+    <div className='w-full'>
    <div>
     <section className="w-full min-h-[80vh] flex items-center justify-center">
       <div className="max-w-5xl text-center">

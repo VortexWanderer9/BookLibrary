@@ -18,7 +18,7 @@
     }
 
       return (
-      <div className='p-5 w-full bg-[#020617] relative text-gray-300 rounded-b-4xl'>
+      <div className='p-5 bg-[#020617] text-gray-300 rounded-b-4xl'>
       <div className='flex flex-col items-center gap-2 justify-center'>
         <div>
           <h2 className='text-xl font-bold'>Categories :</h2>
