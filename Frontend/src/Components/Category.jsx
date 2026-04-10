@@ -7,7 +7,7 @@
     function Category() {
     const [selectedCategory, setSelectedCategory] = useState('Fantasy');
     const [limit, setLimit] = useState(10);
-    const limitRef = useRef(null);
+    const limitRef = useRef(12);
     function handleLimitChange() {
       const newLimit = parseInt(limitRef.current.value);
       if (!isNaN(newLimit) && newLimit > 0) {
@@ -40,7 +40,7 @@
       </div>
       <div className='flex gap-2'>
         <h2 className='text-purple-700 font-bold text-lg'>Limit:</h2>
-        <input useRef={limitRef} type="text" className='border-2 outline-none px-1 w-34' placeholder={limit} />
+        <input ref={limitRef} type="text" className='border-2 outline-none px-1 w-34' placeholder={limit} />
         <button className='cursor-pointer bg-blue-700 rounded px-2 hover:bg-blue-900 ease-in-out duration-150 font-bold' onClick={handleLimitChange}>Apply</button>
       </div>
       <div>{limit}</div>
