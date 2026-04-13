@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 
 export default function Navbar() {
   return (
-    <nav className=" w-full absolute z-199 shadow-md px-4 py-4 flex items-center justify-between">
+    <nav className=" relative z-199 shadow-md flex items-center justify-between">
       {/* Logo */}
       <NavLink 
        to ={'/'}
