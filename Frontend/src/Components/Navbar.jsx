@@ -3,11 +3,11 @@ import { NavLink } from "react-router-dom";
 
 export default function Navbar() {
   return (
-    <nav className=" relative z-199 shadow-md flex items-center justify-between">
+    <nav className=" relative z-199 shadow-md flex items-center p-3 bg-mist-500">
       {/* Logo */}
       <NavLink 
        to ={'/'}
-       className="text-2xl font-bold text-blue-600 transition"
+       className="text-2xl font-bold text-cyan-900 transition"
        >
        mBook
       </NavLink>
