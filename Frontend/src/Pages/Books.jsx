@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import Loading from '../Components/Loading'
+// https://www.googleapis.com/books/v1/volumes?q=white+night
+// https://openlibrary.org/search.json?q=harry+potter
 
 function Books() {
   const [typing, setTyping] = useState(false)
