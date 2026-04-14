@@ -18,8 +18,8 @@
     }
 
       return (
-      <div className='p-5 text-gray-300 rounded-b-4xl'>
-      <div className='flex flex-col items-center gap-2 justify-center'>
+      <div className='p-2 text-gray-300 rounded-b-4xl'>
+      <div className='flex flex-col items-center gap-4 justify-center'>
         <div>
           <h2 className='text-xl font-bold'>Categories :</h2>
         </div>
@@ -38,12 +38,12 @@
           </div>
         </div>
       </div>
-      <div className='flex gap-2'>
+      <div className='flex mt-4 gap-2'>
         <h2 className='text-purple-700 font-bold text-lg'>Limit:</h2>
         <input ref={limitRef} type="text" className='border-2 outline-none px-1 w-34' placeholder={limit} />
         <button className='cursor-pointer bg-blue-700 rounded px-2 hover:bg-blue-900 ease-in-out duration-150 font-bold' onClick={handleLimitChange}>Apply</button>
       </div>
-      <div>{limit}</div>
+      <div className='font-bold text-2xl text-cyan-600'>{limit}</div>
       <BookCard category={selectedCategory} limit={limit} />
     </div>
       )
