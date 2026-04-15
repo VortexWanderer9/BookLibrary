@@ -1,8 +1,7 @@
 import { useEffect, useState } from 'react'
-import {getPopularBooks} from '../Api/books.js'
 import Loading from '../Components/Loading'
 const BASE_URL = "https://openlibrary.org";
-const searchApi = `https://www.googleapis.com/books/v1/volumes?q=`
+// const searchApi = `https://www.googleapis.com/books/v1/volumes?q=`
 import { useDebounce } from 'react-use'
 // https://www.googleapis.com/books/v1/volumes?q=white+night
 // https://openlibrary.org/search.json?q=harry+potter
