@@ -4,7 +4,7 @@ function About() {
   return (
    <>
   <div className='h-full mt-10 relative'>
-     <div className='flex flex-col md:flex-row justify-center gap-10 h-full'>
+     <div className='flex flex-col justify-center gap-10 h-full'>
     <div>
         <h2 className='text-4xl font-bold text-purple-800 mb-5'>About This project.!.</h2>
         <p className='text-justify text-lg text-white'>I love reading books, but when it's time to choose one, i have to search and ask LLM for it, after that, i got an idea about this project which will help me organize my book collection and discover new titles based on my interests. </p>

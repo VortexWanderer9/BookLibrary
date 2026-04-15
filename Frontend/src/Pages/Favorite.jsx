@@ -4,12 +4,12 @@ function Favorite() {
   const books = [
     {
       title: "Crime and Punishment",
-      img: "https://media-amazon.com",
+      img: "crime_.jpg",
       desc: "Rodion Raskolnikov plans to murder a pawnbroker to test his theory that some people are uniquely capable of such actions."
     },
     {
       title: "White Nights",
-      img: "https://media-amazon.com",
+      img: "white-night.jpg",
       desc: "A dreamer falls in love with Nastenka over four nights in St. Petersburg, exploring themes of loneliness and imagination."
     },
     {
@@ -62,12 +62,12 @@ function Favorite() {
       <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 mt-6'>
         {books.map((book, index) => (
           <div key={index} className='flex gap-2 flex-col p-2 rounded bg-black'>
-            <div className='flex justify-center'>
-              <div className='h-64 w-full'>
+            <div className='flex h-100 justify-center'>
+              <div className='h-full w-full'>
                 <img 
                   src={book.img} 
                   alt={book.title} 
-                  className='h-full w-full object-cover rounded'
+                  className='h-full w-full object-fill rounded'
                 />
               </div>
             </div>
